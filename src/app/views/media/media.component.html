@@ -1,0 +1,60 @@
+ <!-- Start Nav Backed Header -->
+  <div class="nav-backed-header parallax" style="background-image:url('images/gallery/camera.jpg');">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <ol class="breadcrumb">
+            <li><a href="/">Home</a></li>
+            <li class="active">Media</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Nav Backed Header --> 
+  <!-- Start Page Header -->
+  <div class="page-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1>Media</h1>
+        </div>
+        <div class="col-md-6">
+          <div class="gallery-filter">
+            <ul class="nav nav-pills sort-source">
+              <li [class.active]="mediaFilter=='*'"><a (click)="filterMedia('*')"><i class="fa fa-th"></i> <span>Show All</span></a></li>
+              <li [class.active]="mediaFilter=='sermon'"><a (click)="filterMedia('sermon')"><i class="fa fa-bullhorn"></i> <span>Sermons</span></a></li>
+              <li [class.active]="mediaFilter=='video'"><a (click)="filterMedia('video')"><i class="fa fa-play"></i><span>Video</span></a></li>
+              <li [class.active]="mediaFilter=='slideshow'"><a (click)="filterMedia('slideshow')"><i class="fa fa-camera"></i><span>Slideshow</span></a></li>
+              <li [class.active]="mediaFilter=='graphic'"><a (click)="filterMedia('graphic')"><i class="fa fa-picture-o"></i><span>Graphics</span></a></li>              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Page Header --> 
+  <!-- Start Content -->
+  <div class="main" role="main">
+    <div id="content" class="content full">
+      <div class="container">
+        <div class="row">
+          <ul class="sort-destination">
+            <div *ngIf="filteredMedia.length<1; else hasContent" style="text-align: center">
+              No content yet. Check back later.
+            </div>
+            <ng-template #hasContent>
+              <li class="col-md-6 col-sm-6 grid-item post format-video media-box" *ngFor="let m of filteredMedia">
+                <div class="glow-over media-box" (click)="openDialog(m);">
+                  <i *ngIf="m.type=='video' || m.type=='sermon'; else slideshowIcon" class="glow-over-icon fa fa-play" style="display:inherit; margin-top:15px'"></i>
+                  <ng-template #slideshowIcon><i class="fa fa-image" aria-hidden="true" (click)="closeDialog()"></i></ng-template>
+                  <div style="color: white; font-size: 20px;">{{m.title}}</div>
+                </div>
+                <img src="{{m.cover}}" alt="{{m.title}}">
+              </li>
+            </ng-template>
+          </ul>  
+        </div>
+      </div>
+    </div>
+  </div>

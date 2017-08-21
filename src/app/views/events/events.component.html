@@ -1,0 +1,55 @@
+<!-- Start Nav Backed Header -->
+<div class="nav-backed-header parallax" style="background-image:url('images/gallery/events-header.jpg')">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <ol class="breadcrumb">
+          <li><a href="/">Home</a></li>
+          <li class="active">Upcoming Events</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Start Page Header -->
+<div class="page-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Upcoming Events</h1>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Page Header --> 
+<!-- Start Content -->
+<div class="main" role="main">
+  <div id="content" class="content full">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="grid-holder col-3 events-grid">
+            <li class="grid-item format-standard" *ngFor="let e of events">
+              <!-- <div class="grid-item-inner"> <a href="single-event.html" class="media-box"> <img src="http://placehold.it/600x600&amp;text=IMAGE+PLACEHOLDER" alt=""> </a> -->
+                <div class="grid-item-inner"><img [src]="e.source" alt="">
+                <div class="grid-content">
+                  <!-- <h3><a href="single-event.html">Evening Prayer</a></h3> -->
+                  <h3>{{e.title}}</h3>
+                  <p>{{e.details}}</p>
+                </div>
+                <ul class="info-table">
+                  <li><i class="fa fa-calendar"></i> {{e.day}} | {{e.time}}</li>
+                  <li><i class="fa fa-map-marker"></i>{{e.location}}</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <!-- <ul class="pager pull-right">
+            <li><a href="#">&larr; Older</a></li>
+            <li><a href="#">Newer &rarr;</a></li>
+          </ul> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

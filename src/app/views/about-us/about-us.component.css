@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Cantata+One|Raleway');
+
+/*.jumbotron{
+    height: 100vh;
+    width: 100%;*/
+/*text-align: center;*/
+/*    color: white;
+    background: linear-gradient(rgba(164,204,65, 1), rgba(164,204,65, 0.5)),
+    url('../../../images/gallery/whattoexpect.jpg');
+    background-size: 100% 100%;
+    display: table;
+}
+.jumbotron h1{
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 500%;
+}*/
+
+.inside h2,.btn{
+
+  font-family: 'Cantata One', serif;
+
+}
+
+.row.expect{
+
+  width: 100%;
+  margin: 0px;
+  text-align: center;
+
+}
+
+.wte,
+.da,
+.sunday,
+.ns{
+
+  width: 100%;
+  display: table;
+  height: 50vh;
+  text-align: center;
+
+}
+
+.da,
+.ns{
+
+  color: white;
+  background-color: #A4CC41;
+
+}
+
+.ns{
+
+  margin-bottom: 2%;
+
+}
+
+.btn{
+
+  background-color: #30292F;
+  color: #A4CC41;
+}
+
+.inside{
+
+  display: table-cell;
+  vertical-align: middle;
+
+}
+
+.outside-table{
+
+  display: table-cell;
+  vertical-align: middle;
+
+
+}
+
+.inside p,.inside ul{
+
+  padding-left: 5%;
+  padding-right: 5%;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+strong{
+
+  color: #30292F;
+}
+
+/*@media only screen and (min-width : 992px) {
+.jumbotron{
+    background:*/
+/* top, transparent red, faked with gradient */
+/*    linear-gradient(
+      rgba(164,204,65, 1),
+      rgba(164,204,65, 0.5)
+    ),*/
+/* bottom, image */
+/*    url("../../../images/gallery/whattoexpectvid.gif");
+    background-size: 100% 100%;
+}
+}*/
+
+.video-parent{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.text-overlay{
+  display: table;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  z-index: 900;
+  width: 100%;
+  height: inherit;
+  vertical-align: middle;
+  background-color: rgba(164,204,65, 0.8);
+  /* background-color: black; */
+}
+
+.text-overlay h1{
+  display: table-cell;
+  vertical-align: middle;
+  color: white;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-size: 600%;
+}
+
+img{
+
+  animation-name: top-image;
+  animation-duration: 2s;
+
+}
+
+.sqs-background-background{
+  width: 100%;
+  height:inherit;
+  z-index:2 !important;
+  overflow: hidden;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+  position: relative;
+  opacity: 0.6;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("http://via.placeholder.com/350x150");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("../../../images/sermon/pastor_brent.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("../../../images/gallery/beliefs.jpg");
+  min-height: 400px;
+}
+
+.bgimg-4 {
+  background-image: url("../../../images/gallery/vision.jpg");
+  min-height: 400px;
+}
+
+
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #ddd;
+}
+
+li
+{
+  background-repeat: no-repeat;
+  background-position: 100% .4em;
+  padding-right: .6em;
+  margin: 1em 0;
+}

@@ -1,0 +1,23 @@
+<div class="main-dialog-frame">
+  <span flex></span>
+  <i class="fa fa-times" aria-hidden="true" (click)="closeDialog()"></i>
+  <h4>{{media.title}}</h4>
+  <div>
+    <iframe id="iFrameOnPage" 
+      *ngIf="media.type=='video' || media.type=='sermon'; else slideshow"
+      [style.display]="source ? 'block' : 'hidden'" [width]="iframeWidth" [height]="iframeHeight"
+      [src]="source">
+    </iframe>
+    <ng-template #slideshow>
+        <swiper [config]="config">
+            <div class="swiper-wrapper text-align-center" [style.width]="imgWidth" [style.height]="imgHeight">
+            <!-- <div class="swiper-wrapper"> -->
+                <div class="swiper-slide" *ngFor="let slide of media.slides"><img [src]="slide.source"/></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            </swiper>
+    </ng-template>
+  </div>
+</div>

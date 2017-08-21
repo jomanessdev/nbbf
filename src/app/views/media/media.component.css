@@ -1,0 +1,26 @@
+.glow-over{
+    display: none;
+    vertical-align: middle;
+    text-align: center;
+    position: absolute;
+    width: 94%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    /* z-index: 1000; */
+}
+
+.media-box:hover .glow-over{
+    display: table-cell;
+    cursor: pointer;
+}
+
+.glow-over .fa-play{
+    color: white;
+    font-size: 14px;
+}
+
+.glow-over .fa-image{
+    color: white;
+    font-size: 14px;
+}
+

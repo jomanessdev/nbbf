@@ -1,0 +1,45 @@
+
+
+.jumbotron{
+
+    height: 62vh;
+    width: 100%;
+    /*text-align: center;*/
+    color: white;
+    /*background: #007991;  /* fallback for old browsers */
+    /*background: -webkit-linear-gradient(to right, #78ffd6, #007991);  /* Chrome 10-25, Safari 5.1-6 */
+    /*background: linear-gradient(to right, #78ffd6, #007991); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-align: right;
+    display: table;
+    
+}
+
+.outside-table{
+
+    display: table-cell;
+    vertical-align: middle;
+
+}
+
+.across{
+
+    width: 100%;
+    height: 50vh;
+    display: table;
+    text-align: center;
+
+}
+
+.inside-across{
+
+    display: table-cell;
+    vertical-align: middle;
+
+}
+
+.row.ministries{
+
+    text-align: center;
+
+}
+

@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+.loading-screen{
+    position:absolute;
+    z-index:1000;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    background-color:rgba(204,204,204,1);
+    background:url(assets/nblogo1_bigger.png) center center no-repeat;
+}
