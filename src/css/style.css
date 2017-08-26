@@ -671,13 +671,13 @@ body.boxed .body .site-header, body.boxed .body .main-menu-wrapper{
 	width:100%;
 }
 .site-header .topbar{
-	background-color:rgba(255,255,255,.8);
+	/* background-color:rgba(255,255,255,.8); */
 	height:80px;
 	position:relative;
 	z-index:3;
-	-webkit-box-shadow:0 2px 0 rgba(0,0,0,.1);
-	-moz-box-shadow:0 2px 0 rgba(0,0,0,.1);
-	box-shadow:0 2px 0 rgba(0,0,0,.1);
+	/* -webkit-box-shadow:0 2px 0 rgba(0,0,0,.1); */
+	/* -moz-box-shadow:0 2px 0 rgba(0,0,0,.1); */
+	/* box-shadow:0 2px 0 rgba(0,0,0,.1); */
 }
 .site-header h1.logo{
 	position:relative;
@@ -734,13 +734,13 @@ body.boxed .body .site-header, body.boxed .body .main-menu-wrapper{
 }
 .navigation{
 	height:50px;
-	background:#f8f7f3;
+	/* background:#f8f7f3;
 	-webkit-box-shadow:0 0 3px rgba(0,0,0,.4);
 	-moz-box-shadow:0 0 3px rgba(0,0,0,.4);
 	box-shadow:0 0 3px rgba(0,0,0,.4);
 	-webkit-border-radius:0 0 4px 4px;
 	-moz-border-radius:0 0 4px 4px;
-	border-radius:0 0 4px 4px;
+	border-radius:0 0 4px 4px; */
 	z-index:2;
 	text-align:center;
 	font-family: 'Roboto Condensed', sans-serif;
@@ -761,6 +761,7 @@ body.boxed .body .site-header, body.boxed .body .main-menu-wrapper{
 	padding:0 25px;
 	display:block;
 	text-decoration:none;
+	color: white;
 }
 .navigation ul > li > a:hover, .navigation ul > li > a.current{
 }
