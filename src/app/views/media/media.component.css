@@ -24,3 +24,51 @@
     font-size: 14px;
 }
 
+.video-parent{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+}
+
+.text-overlay{
+    margin-top: 115px;
+    display: table;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    z-index: 900;
+    width: 100%;
+    height: inherit;
+    vertical-align: middle;
+    /* background-color: black; */
+}
+
+.text-overlay h1{
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 600%;
+}
+
+img{
+
+    animation-name: top-image;
+    animation-duration: 2s;
+
+}
+
+.sqs-background-background{
+    width: 100%;
+    height:inherit;
+    z-index:2 !important; 
+    overflow: hidden;
+}
+
+
+iframe{
+    height: 80%;
+    width: 80%;
+}
+    
