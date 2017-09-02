@@ -95,7 +95,8 @@
 
 @media only screen and (min-width : 480px) {
     .padding-25{
-        padding: 25px;
+        padding-top: 25px;
+        padding-bottom:25px;
     }
 
     .service-info{
@@ -117,5 +118,5 @@
     margin-top: 250px;
     text-align: center;
     width: 100%;
-    z-index: 1000;
+    z-index: 950;
 }
