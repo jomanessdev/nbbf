@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Cantata+One|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Cantata+One|Fjalla+One|Montserrat|Raleway');
 
 /*.jumbotron{
     height: 100vh;
@@ -55,12 +55,6 @@
 
 }
 
-.btn{
-
-  background-color: #30292F;
-  color: #A4CC41;
-}
-
 .inside{
 
   display: table-cell;
@@ -82,11 +76,6 @@
   padding-right: 5%;
   font-family: 'Raleway', sans-serif;
 
-}
-
-strong{
-
-  color: #30292F;
 }
 
 /*@media only screen and (min-width : 992px) {
@@ -122,12 +111,22 @@ strong{
   /* background-color: black; */
 }
 
-.text-overlay h1{
+.text-overlay h1, .text-overlay h3{
   display: table-cell;
   vertical-align: middle;
   color: white;
-  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-  font-size: 600%;
+  /*font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-size: 500%;*/
+  /* font-family: 'Fjalla One', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 500%;
+    text-transform: uppercase;*/
+      font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: .3em;
 }
 
 img{
@@ -144,7 +143,7 @@ img{
   overflow: hidden;
 }
 
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+.bgimg-1, .bgimg-2, .bgimg-3{
   position: relative;
   opacity: 0.6;
   background-attachment: fixed;
@@ -169,13 +168,22 @@ img{
 }
 
 .bgimg-4 {
-  background-image: url("../../../images/gallery/vision.jpg");
-  min-height: 400px;
+  
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../../images/gallery/aboutbottom.jpg");
+  height: 100vh;
+  width: 100%;
+  
+  /*min-height: 400px;*/
 }
 
 
 
-.caption {
+/*.caption {
   position: absolute;
   left: 0;
   top: 50%;
@@ -190,7 +198,7 @@ img{
   padding: 18px;
   font-size: 25px;
   letter-spacing: 10px;
-}
+}*/
 
 h3 {
   letter-spacing: 5px;
@@ -205,4 +213,86 @@ li
   background-position: 100% .4em;
   padding-right: .6em;
   margin: 1em 0;
+}
+
+
+
+.square-container{
+
+  height: 100vh;
+  /*width: 100%;*/
+  text-align: center;
+  color: white;
+      font-family: Open Sans;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 150%;
+    letter-spacing: .03em;
+    line-height: 1.6em;
+
+}
+
+.square-container h1{
+
+  color: white;
+ font-family: 'Fjalla One', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 350%;
+}
+
+.col-md-6{
+
+  height: 50vh;
+  padding-top: 2%;
+  padding-left: 3%;
+  padding-right: 3%;
+  
+}
+
+.bgimg-4 .square-container .row{
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.square-container #top,.square-container #bottom{
+
+  width: 100%;
+
+}
+
+/*.square-container #top #story{
+
+  background-color: red;
+
+}
+
+.square-container #top #vision{
+
+  background-color: blue;
+
+}
+
+.square-container #bottom #beliefs{
+
+  background-color: white;
+
+}
+
+.square-container #bottom #ministries{
+
+  background-color: green;
+
+}
+*/
+.btn{
+
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+
 }

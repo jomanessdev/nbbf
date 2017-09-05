@@ -14,7 +14,7 @@ export class MainComponent implements OnInit {
 
     const config = {
       container: document.documentElement.querySelector('.sqs-video-background'),
-      url: 'https://youtu.be/qzA8RVE6rzA'/*,
+      url: 'https://youtu.be/9sdHQ2Hk28o'/*,
       useCustomFallbackImage: true*/
     };
     const myVideoBackground = new VideoBackgroundRenderer(config);
