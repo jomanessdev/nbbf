@@ -15,6 +15,9 @@ import { PageNotFoundComponent } from './views/page-not-found/page-not-found.com
 import { WhatToExpectComponent } from './views/what-to-expect/what-to-expect.component';
 import { GetInvolvedComponent } from './views/get-involved/get-involved.component';
 import { MediaComponent } from './views/media/media.component';
+import { BeliefsComponent } from './views/beliefs/beliefs.component';
+import { VisionComponent } from './views/mission-vision/mission-vision.component';
+import { OurStoryComponent } from './views/our-story/our-story.component';
 import { TestComponent } from './components/test/test.component';
 
 import { VideoBackground } from '@squarespace/video-background';
@@ -36,6 +39,9 @@ import { EventsComponent } from './views/events/events.component';
     AboutUsComponent,
     ComingSoonComponent,
     EventsComponent,
+    BeliefsComponent,
+    VisionComponent,
+    OurStoryComponent,
     TestComponent
   ],
   imports: [

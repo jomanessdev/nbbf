@@ -96,6 +96,8 @@
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  background-image: url("../../../images/gallery/about_us.jpg");
+  background-size: 100% 100%;
 }
 
 .text-overlay{
@@ -173,9 +175,9 @@ img{
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   background-image: url("../../../images/gallery/aboutbottom.jpg");
-  height: 100vh;
+  height: 130vh;
   width: 100%;
   
   /*min-height: 400px;*/
@@ -229,6 +231,7 @@ li
     font-size: 150%;
     letter-spacing: .03em;
     line-height: 1.6em;
+    padding-top: 5%;
 
 }
 
@@ -291,8 +294,94 @@ li
   border: 2px solid white;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-    font-style: normal;
-    text-transform: uppercase;
-    letter-spacing: .5em;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: .5em;
+
+}
+
+#mob-div{
+
+  display: none;
+
+}
+
+.btn:hover{
+
+  color: black;
+  background-color: white;
+
+}
+
+@media only screen and (max-width : 992px) {
+.square-container{
+
+        display: none;
+
+}
+
+.video-parent{
+  width: 100%;
+  height: 150vh;
+  overflow: hidden;
+  background-image: url("../../../images/gallery/about_us.jpg");
+  background-size: 100% 100%;
+}
+
+.text-overlay{
+  display: table;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  z-index: 900;
+  width: 100%;
+  height: inherit;
+  vertical-align: middle;
+  background-color: rgba(164,204,65, 0.8);
+  /* background-color: black; */
+}
+
+.text-overlay img{
+
+  display: none;
+
+}
+
+#bgimg-4{
+
+  height: 150vh;
+
+}
+
+#mob-div{
+
+  display: unset;
+  text-align: center;
+
+}
+
+.bgimg-4 #row1{
+
+  padding-top: 10%;
+
+}
+
+#mob-div a{
+
+  text-decoration: none;
+
+}
+
+#mob-div h1{
+
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: .3em;
+  font-size: 150%;
+
+}
 
 }

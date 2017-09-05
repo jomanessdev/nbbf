@@ -9,6 +9,9 @@ import { MediaComponent } from './views/media/media.component';
 import { PageNotFoundComponent } from './views/page-not-found/page-not-found.component';
 import { ComingSoonComponent } from './views/coming-soon/coming-soon.component';
 import { EventsComponent } from './views/events/events.component';
+import { BeliefsComponent } from './views/beliefs/beliefs.component';
+import { VisionComponent } from './views/mission-vision/mission-vision.component';
+import { OurStoryComponent } from './views/our-story/our-story.component';
  
 const appRoutes: Routes = [
   { path: 'home', component: MainComponent },
@@ -19,6 +22,9 @@ const appRoutes: Routes = [
   { path: 'media', component: MediaComponent },
   {path:'coming-soon', component: ComingSoonComponent},
   {path:'events',component: EventsComponent},
+  { path: 'beliefs', component: BeliefsComponent },
+  {path:'vision', component: VisionComponent},
+  {path:'story',component: OurStoryComponent},
   { path: '**', component: PageNotFoundComponent }
 ];
  
