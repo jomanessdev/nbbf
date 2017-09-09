@@ -82,11 +82,32 @@
 
 }
 
+#main p{
+
+  padding-left: 20%;
+  padding-right: 20%;
+
+}
+
 @media only screen and (max-width : 992px) {
 #text-container{
 
   padding-top: 30%;
 
 }
+
+#text-container h1{
+
+  font-size: 250%;
+
+}
+
+#main p{
+
+  padding-left: 7%;
+  padding-right: 7%;
+
+}
+
 
 }

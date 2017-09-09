@@ -46,6 +46,13 @@
 
 }
 
+#main p{
+
+  padding-left: 20%;
+  padding-right: 20%;
+
+}
+
 #main h1,#main h3{
 
     font-family: 'Montserrat', sans-serif;
@@ -67,5 +74,19 @@
   padding-top: 30%;
 
 }
+
+#text-container h1{
+
+  font-size: 250%;
+
+}
+
+#main p{
+
+  padding-left: 7%;
+  padding-right: 7%;
+
+}
+
 
 }

@@ -14,7 +14,6 @@
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     font-size: 500%;
 }*/
-
 .inside h2,.btn{
 
   font-family: 'Cantata One', serif;
@@ -70,7 +69,7 @@
 
 }
 
-.inside p,.inside ul{
+.inside p,.inside ul,#about-pastor p{
 
   padding-left: 5%;
   padding-right: 5%;
@@ -96,7 +95,7 @@
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background-image: url("../../../images/gallery/about_us.jpg");
+  background-image: url("../../../images/gallery/abouttop.jpg");
   background-size: 100% 100%;
 }
 
@@ -109,7 +108,7 @@
   width: 100%;
   height: inherit;
   vertical-align: middle;
-  background-color: rgba(164,204,65, 0.8);
+  background-color: rgba(47, 61, 123, 0.64);;
   /* background-color: black; */
 }
 
@@ -129,6 +128,9 @@
     font-style: normal;
     text-transform: uppercase;
     letter-spacing: .3em;
+    font-size: 400%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 img{
@@ -176,9 +178,10 @@ img{
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-image: url("../../../images/gallery/aboutbottom.jpg");
+  background-image: url("../../../images/gallery/aboutbottom2.jpg");
   height: 130vh;
   width: 100%;
+  display: table;
   
   /*min-height: 400px;*/
 }
@@ -202,7 +205,7 @@ img{
   letter-spacing: 10px;
 }*/
 
-h3 {
+h3{
   letter-spacing: 5px;
   text-transform: uppercase;
   font: 20px "Lato", sans-serif;
@@ -221,7 +224,7 @@ li
 
 .square-container{
 
-  height: 100vh;
+  height: 100%;
   /*width: 100%;*/
   text-align: center;
   color: white;
@@ -232,16 +235,29 @@ li
     letter-spacing: .03em;
     line-height: 1.6em;
     padding-top: 5%;
+    display: table-cell;
+    vertical-align: middle;
 
+}
+
+.square-container h1,#about-pastor h2{
+
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 350%;
 }
 
 .square-container h1{
 
-  color: white;
- font-family: 'Fjalla One', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 350%;
+    color: white;
+
+}
+
+#about-pastor h2{
+
+  color: black;
+
 }
 
 .col-md-6{
@@ -313,6 +329,59 @@ li
 
 }
 
+#about-pastor{
+
+  height: 80%;
+  width: 100%;
+  background-color: white;
+  margin: 0 0 0 0;
+  padding: 0px;
+  color: black;
+  text-align: center;
+  display: table;
+
+}
+
+#about-pastor .outer-div{
+
+  display: table-cell;
+  vertical-align: middle;
+
+}
+
+#about-pastor p{
+
+  font-size: 145%;
+
+}
+
+#about-pastor h2{
+
+  font-size: 500% !important;
+
+}
+
+#about-pastor-content{
+
+  /*padding-top: 5%;*/
+
+}
+
+#about-pastor img{
+
+  max-height: 100%;
+  border-radius: 50%;
+
+}
+
+#about-pastor-mob,#about-pastor-mob-2{
+
+  display: none;
+
+}
+
+/*mobile stuff
+all goes under here*/
 @media only screen and (max-width : 992px) {
 .square-container{
 
@@ -322,47 +391,58 @@ li
 
 .video-parent{
   width: 100%;
-  height: 150vh;
+  height: 80vh;
   overflow: hidden;
-  background-image: url("../../../images/gallery/about_us.jpg");
+  background-image: url("../../../images/gallery/abouttop.jpg");
   background-size: 100% 100%;
 }
 
 .text-overlay{
-  display: table;
-  position: absolute;
-  text-align: center;
-  left: 0;
-  z-index: 900;
-  width: 100%;
-  height: inherit;
-  vertical-align: middle;
-  background-color: rgba(164,204,65, 0.8);
-  /* background-color: black; */
-}
 
-.text-overlay img{
-
-  display: none;
+  height: 80vh;
 
 }
 
-#bgimg-4{
+.text-overlay h1{
 
-  height: 150vh;
+  padding-top: 4%;
+  font-size: 200%;
+
+}
+
+.bgimg-4{
+
+  height: 80vh;
 
 }
 
 #mob-div{
 
-  display: unset;
+  display: table-cell;
+  vertical-align: middle;
   text-align: center;
 
 }
 
-.bgimg-4 #row1{
+.bgimg-4 .row1,.bgimg-4 .row2,.bgimg-4 .row3,.bgimg-4 .row4{
 
-  padding-top: 10%;
+  height: 20vh;
+  display: table;
+  margin: 0 !important;
+  padding-bottom: 0 !important;
+  width: 100%;
+
+}
+
+.bgimg-4 .row1,.bgimg-4 .row3{
+
+  background-color: white;
+
+}
+
+.bgimg-4 .row1 h1,.bgimg-4 .row3 h1{
+
+  color: black !important;
 
 }
 
@@ -381,6 +461,43 @@ li
   text-transform: uppercase;
   letter-spacing: .3em;
   font-size: 150%;
+
+}
+
+#about-pastor{
+
+  display: none;
+
+}
+
+#about-pastor-mob,#about-pastor-mob-2{
+
+  display: unset;
+  margin: 0 0 0 0;
+  color: black;
+  background-color: white;
+  height: 60vh;
+  width: 100%;
+  text-align: center;
+  clear: both !important;
+  display: block !important;
+
+}
+
+#about-pastor-mob-2 .col-md-6 h2{
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 300%;
+    color: black;
+}
+
+#about-pastor-mob-2 p{
+
+  padding-left: 5%;
+  padding-right: 5%;
+  font-family: 'Raleway', sans-serif;
+  color: black;
 
 }
 

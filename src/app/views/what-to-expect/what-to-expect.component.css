@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Cantata+One|Raleway');
-
+@import url('https://fonts.googleapis.com/css?family=Cantata+One|Fjalla+One|Montserrat|Raleway');
 /*.jumbotron{
 
     height: 100vh;
@@ -24,7 +23,10 @@
 
 .inside h2,.btn{
     
-    font-family: 'Cantata One', serif;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 350%;
 
 }
 
@@ -56,9 +58,15 @@
 
 }
 
-.ns{
+/*.ns{
 
     margin-bottom: 2%;
+
+}*/
+
+.content{
+
+    padding: 0;
 
 }
 
@@ -85,9 +93,14 @@
 
 .inside p,.inside ul{
 
-    padding-left: 5%;
-    padding-right: 5%;
-    font-family: 'Raleway', sans-serif;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 120%;
+    letter-spacing: .03em;
+    line-height: 1.6em;
 
 }
 
@@ -128,7 +141,7 @@ strong{
     width: 100%;
     height: inherit;
     vertical-align: middle;
-    background-color: rgba(164,204,65, 0.8);
+    background-color: rgba(47, 61, 123, 0.64);
     /* background-color: black; */
 }
 
@@ -136,7 +149,11 @@ strong{
     display: table-cell;
     vertical-align: middle;
     color: white;
-    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: .3em;
     font-size: 600%;
 }
 
@@ -155,7 +172,7 @@ img{
 }
 
 @media only screen and (max-width : 992px) {
-.text-overlay,.sqs-video-background{
+.sqs-video-background{
 
         display: none;
 
@@ -166,7 +183,44 @@ img{
     background-image: url("../../../images/gallery/whattoexpect.jpg");
     background-size: 100% 100%;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
+
+}
+
+.text-overlay{
+
+        padding-top: 4%;
+        
+
+}
+.text-overlay h1{
+
+    font-size: 300%;
+
+}
+
+/*.inside{
+
+    padding: 3%;
+
+}*/
+.inside h2{
+
+    font-size: 175%;
+    padding-top: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.inside ul,.inside p{
+
+    padding-bottom: 5%;
+
+}
+
+.inside li{
+
+    padding-bottom: 3%;
 
 }
 
