@@ -121,8 +121,8 @@
 
 .watch-latest{
     position: absolute;
-    margin-top: 250px;
     text-align: center;
+    top:50%;
     width: 100%;
     z-index: 950;
 }
