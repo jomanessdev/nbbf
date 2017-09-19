@@ -361,9 +361,9 @@ li
 
 }
 
-#about-pastor-content{
+#about-pastor .col-md-6{
 
-  /*padding-top: 5%;*/
+  height: auto !important;
 
 }
 
@@ -476,12 +476,17 @@ all goes under here*/
   margin: 0 0 0 0;
   color: black;
   background-color: white;
-  height: 60vh;
+  height: 60%;
   width: 100%;
   text-align: center;
   clear: both !important;
   display: block !important;
 
+}
+
+#about-pastor-mob-2 .col-md-6{
+    
+    height: auto !important;
 }
 
 #about-pastor-mob-2 .col-md-6 h2{

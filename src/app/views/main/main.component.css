@@ -25,11 +25,14 @@
     font-size: 600%;
 }
 
-.sqs-background-background{
+.sqs-video-background{
     width: 100%;
     height:inherit;
-    z-index:2 !important; 
-    overflow: hidden;
+    background-image: url("../../../assets/homepagevid.gif");
+    background-size: 100% 100%;
+    z-index: 925;
+    display: table;
+
 }
 
 .bottom-half{
@@ -125,10 +128,43 @@
     top:50%;
     width: 100%;
     z-index: 950;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.watch-latest button{
+
+    background-color: silver;
+    color: white;
+    width: 50%;
+    height: 15vh;
+    font-size: 200%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    padding: 0px;
+    margin: 0 0 0 0;
+
+}
+
+.video-parent video{
+
+    height: auto !important;
+    width: 100% !important;
+
+}
+
+.watch-latest button:hover{
+
+    background-color: transparent;
+    border: 2px solid white;
+
 }
 
 @media only screen and (max-width : 992px) {
-.sqs-video-background{
+video{
 
         display: none;
 

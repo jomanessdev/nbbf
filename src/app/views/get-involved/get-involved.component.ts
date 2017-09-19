@@ -13,13 +13,6 @@ export class GetInvolvedComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-    const config = {
-      container: document.documentElement.querySelector('.sqs-video-background'),
-      url: 'https://youtu.be/qzA8RVE6rzA'/*,
-      useCustomFallbackImage: true*/
-    };
-    const myVideoBackground = new VideoBackgroundRenderer(config);
-  }
+  ngOnInit() {}
 
 }

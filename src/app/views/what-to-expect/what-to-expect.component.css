@@ -21,6 +21,13 @@
 
 }*/
 
+.video-parent video{
+
+    height: auto !important;
+    width: 100% !important;
+
+}
+
 .inside h2,.btn{
     
     font-family: 'Fjalla One', sans-serif;
@@ -137,7 +144,6 @@ strong{
     position: absolute;
     text-align: center;
     left: 0;
-    z-index: 900;
     width: 100%;
     height: inherit;
     vertical-align: middle;
@@ -155,6 +161,7 @@ strong{
     text-transform: uppercase;
     letter-spacing: .3em;
     font-size: 600%;
+    padding: 0 3%;
 }
 
 img{
@@ -164,15 +171,15 @@ img{
 
 }
 
-.sqs-background-background{
+.sqs-video-background{
     width: 100%;
     height:inherit;
-    z-index:2 !important; 
-    overflow: hidden;
+    background-image: url('../../../assets/whattoexpectvid.gif');
+    background-size: 100% 100%;
 }
 
 @media only screen and (max-width : 992px) {
-.sqs-video-background{
+video{
 
         display: none;
 

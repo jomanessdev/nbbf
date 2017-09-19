@@ -6,6 +6,13 @@
     overflow: hidden;
 }
 
+.video-parent video{
+
+    height: auto !important;
+    width: 100% !important;
+
+}
+
 .text-overlay{
     display: table;
     position: absolute;
@@ -19,6 +26,15 @@
     /* background-color: black; */
 }
 
+.sqs-video-background{
+
+    height: inherit;
+    width: inherit;
+    background-image: url('../../../assets/getinvolved.gif');
+    background-size: 100% 100%;
+
+}
+
 .text-overlay h1{
     display: table-cell;
     vertical-align: middle;
@@ -29,6 +45,7 @@
     text-transform: uppercase;
     letter-spacing: .3em;
     font-size: 600%;
+    padding: 0 3%;
 }
 
 .inside-across h2,.btn{
@@ -138,7 +155,7 @@ strong,.btn{
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-.sqs-video-background{
+video{
 
         display: none;
 

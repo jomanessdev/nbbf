@@ -10,13 +10,6 @@ export class WhatToExpectComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-    const config = {
-      container: document.documentElement.querySelector('.sqs-video-background'),
-      url: 'https://youtu.be/-rsIA02BvBc'/*,
-      useCustomFallbackImage: true*/
-    };
-    const myVideoBackground = new VideoBackgroundRenderer(config);
-  }
+  ngOnInit() {}
 
 }
