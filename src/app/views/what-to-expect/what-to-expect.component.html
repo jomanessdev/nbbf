@@ -21,9 +21,19 @@
   <div class="video-parent">
     <div class="text-overlay"><h1>You Belong Here</h1></div>
       <!-- <div class="sqs-video-background"></div> -->
-    <video  autoplay loop muted>
+    <video  
+    class="video-js" 
+    data-setup='{"autoplay": true, "loop": true, "preload": "auto", "fluid": true, "muted": true }' 
+    poster="../../../images/gallery/whattoexpect.jpg"
+    >
       <source src="../../../assets/what-to-expect.mp4" type="video/mp4">
-      Your Browser Does Not Support The Video Tag
+        <p class="vjs-no-js">
+    To view this video please enable JavaScript, and consider upgrading to a
+    web browser that
+    <a href="http://videojs.com/html5-video-support/" target="_blank">
+      supports HTML5 video
+    </a>
+  </p>
     </video>
   </div>
   <!-- End Page Header --> 

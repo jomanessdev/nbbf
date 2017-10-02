@@ -21,10 +21,15 @@
 
 }*/
 
-.video-parent video{
+video, .video-js{
 
-    height: auto !important;
-    width: 100% !important;
+    min-width: 100% !important;
+    min-height: 100vh !important;
+    object-fit: cover;
+    width: auto;
+    height: auto;
+    right: 0;
+    bottom: 0;
 
 }
 
@@ -148,6 +153,7 @@ strong{
     height: inherit;
     vertical-align: middle;
     background-color: rgba(47, 61, 123, 0.64);
+    z-index: 900;
     /* background-color: black; */
 }
 
@@ -174,12 +180,12 @@ img{
 .sqs-video-background{
     width: 100%;
     height:inherit;
-    background-image: url('../../../assets/whattoexpectvid.gif');
+   /* background-image: url('../../../assets/whattoexpectvid.gif');*/
     background-size: 100% 100%;
 }
 
 @media only screen and (max-width : 992px) {
-video{
+video, .video-js{
 
         display: none;
 

@@ -4,6 +4,18 @@
     overflow: hidden;
 }
 
+video, .video-js{
+
+    min-width: 100% !important;
+    min-height: 100vh !important;
+    object-fit: cover;
+    width: auto;
+    height: auto;
+    right: 0;
+    bottom: 0;
+
+}
+
 .text-overlay{
     display: table;
     position: absolute;
@@ -28,12 +40,19 @@
 .sqs-video-background{
     width: 100%;
     height:inherit;
-    background-image: url("../../../assets/homepagevid.gif");
+    /*background-image: url("../../../assets/homepagevid.gif");*/
     background-size: 100% 100%;
     z-index: 925;
     display: table;
 
 }
+
+/*.video-parent video{
+
+    min-width: 100% !important;
+    min-height: 100vh !important;
+
+}*/
 
 .bottom-half{
     background-color: rgba(0,0,0,0.4);
@@ -136,7 +155,8 @@
 
     background-color: silver;
     color: white;
-    width: 50%;
+    display: inline-block;
+    text-align: center;
     height: 15vh;
     font-size: 200%;
     font-family: 'Montserrat', sans-serif;
@@ -144,15 +164,8 @@
     font-style: normal;
     text-transform: uppercase;
     letter-spacing: .3em;
-    padding: 0px;
+    padding: 0px 3%;
     margin: 0 0 0 0;
-
-}
-
-.video-parent video{
-
-    height: auto !important;
-    width: 100% !important;
 
 }
 
@@ -164,7 +177,7 @@
 }
 
 @media only screen and (max-width : 992px) {
-video{
+video, .video-js{
 
         display: none;
 
@@ -210,4 +223,24 @@ video{
 
         text-decoration: none;
     }
+
+    .watch-latest button{
+
+    background-color: black;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    height: 15vh;
+    font-size: 200%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    padding: 0px 3%;
+    margin: 0 0 0 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
 }

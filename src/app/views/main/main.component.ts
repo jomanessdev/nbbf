@@ -11,6 +11,21 @@ export class MainComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {
+
+      this.changeVideoSize();
+
+  }
+
+  changeVideoSize = function (){
+
+      var video = document.getElementsByTagName("video")[0];
+      var vidParent = document.getElementById("video-parent");
+      video.height = vidParent.offsetHeight;
+      video.width = vidParent.offsetWidth;
+      
+
+
+  }
 
   }

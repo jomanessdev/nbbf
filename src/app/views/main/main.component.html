@@ -1,8 +1,18 @@
-<div class="video-parent">
+<div class="video-parent" id="video-parent">
     <div class="text-overlay"><div id="mob-header"></div></div>
-    <video  autoplay loop muted>
+    <video  
+    class="video-js" 
+    data-setup='{"autoplay": true, "loop": true, "preload": "auto", "fluid": true, "muted": true }' 
+    poster="../../../images/canva-photo-editor.png"
+    >
       <source src="../../../assets/new-web-vid.mp4" type="video/mp4">
-      Your Browser Does Not Support The Video Tag
+        <p class="vjs-no-js">
+    To view this video please enable JavaScript, and consider upgrading to a
+    web browser that
+    <a href="http://videojs.com/html5-video-support/" target="_blank">
+      supports HTML5 video
+    </a>
+  </p>
     </video>
         <div class="watch-latest">
 <!--          <h1 class="service-info" style="color:white;">Watch The Latest Sermon</h1>
